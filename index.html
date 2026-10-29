@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Little Puppy Birthday Surprise | Lili Lolli</title>
+<style>
+:root{--wine:#863f55;--pink:#f3bdc9;--cream:#fff6e9;--paper:#fffbf3}*{box-sizing:border-box}
+body{margin:0;min-height:100svh;background:radial-gradient(circle at 50% 30%,#fff9ee,#f6d7dc 70%,#e7b9c3);font-family:Georgia,serif;color:var(--wine);overflow-x:hidden}
+header{text-align:center;padding:25px 12px 0;font-size:12px;letter-spacing:4px;text-transform:uppercase}h1{text-align:center;font-weight:normal;font-style:italic;font-size:clamp(29px,5vw,54px);margin:15px 0 4px}.subtitle{text-align:center;font:13px Arial,sans-serif;letter-spacing:1px;opacity:.7}
+.stage{height:min(67vh,620px);min-height:400px;display:grid;place-items:center;perspective:1400px;touch-action:pan-y;overflow:hidden}
+.scene{width:480px;height:320px;position:relative;transform-style:preserve-3d;transform:scale(var(--scale,1)) rotateX(-12deg) rotateY(var(--yaw,-12deg));transition:transform .25s;filter:drop-shadow(0 28px 22px #90465a44)}
+.base{position:absolute;width:480px;height:320px;transform:rotateX(74deg) translateY(40px);transform-style:preserve-3d;background:linear-gradient(125deg,#fff9ed,#f6cbd3);border:8px solid #fff8ee;box-shadow:inset 0 0 0 2px #c78394,0 2px 2px #a96d7b;border-radius:4px}
+.back{position:absolute;width:480px;height:320px;background:linear-gradient(145deg,#fffaf0,#f4c9d4);border:9px solid #fff9f1;box-shadow:inset 0 0 0 2px #ca8a99;transform-origin:bottom;transform:translateY(-75px) rotateX(var(--fold,-90deg));transition:transform 1.6s cubic-bezier(.18,.8,.2,1);backface-visibility:visible;border-radius:4px;transform-style:preserve-3d}
+.inside{position:absolute;inset:8px;text-align:center;backface-visibility:hidden}.inside h2{font-size:37px;font-weight:normal;font-style:italic;margin:25px 0 3px}.inside p{font-size:13px;margin:0}
+.cover{position:absolute;inset:0;background:linear-gradient(145deg,#fff8e9,#efc0ca);transform:rotateY(180deg) translateZ(2px);backface-visibility:hidden;display:grid;place-content:center;text-align:center;border:2px solid #c78394}.cover h2{font-size:45px;font-style:italic;font-weight:normal;margin:8px}.cover p{letter-spacing:4px;font-size:13px}
+.decoration{position:absolute;font-size:35px;filter:drop-shadow(0 3px 1px #a66a6a55)}.d1{left:20px;top:20px}.d2{right:20px;top:20px}.d3{left:35px;bottom:22px}.d4{right:35px;bottom:22px}
+.popup{position:absolute;left:95px;top:-112px;width:300px;height:270px;transform-origin:bottom center;transform:rotateX(var(--popup,-90deg));transition:transform 1.7s cubic-bezier(.18,.8,.2,1);transform-style:preserve-3d;pointer-events:none}
+.arch{position:absolute;inset:0;border:15px solid #d899a8;border-bottom:0;border-radius:170px 170px 0 0;background:linear-gradient(#f8d4dc,#fff4e4);box-shadow:inset 0 0 0 5px #fff4e4,0 4px 0 #b77b8c}
+.puppy{position:absolute;width:225px;height:230px;left:37px;top:39px;filter:drop-shadow(4px 6px 2px #8e5d6b55);animation:bob 3s ease-in-out infinite}
+@keyframes bob{50%{translate:0 -5px}}.cake{position:absolute;bottom:-13px;left:180px;font-size:84px;filter:drop-shadow(2px 4px 2px #915c6955)}
+.balloons{position:absolute;top:-55px;right:-60px;font-size:55px;transform:rotate(8deg);animation:sway 4s ease-in-out infinite}@keyframes sway{50%{transform:rotate(-6deg)}}
+.flowers{position:absolute;left:-75px;bottom:0;font-size:53px}.gift{position:absolute;right:-65px;bottom:-12px;font-size:58px}
+.greeting{position:absolute;bottom:22px;left:0;right:0;text-align:center;font-size:19px;font-style:italic;letter-spacing:1px}
+.controls{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;padding:0 15px}button{border:1px solid #a66b7b;background:#fff7ee;color:var(--wine);padding:13px 21px;border-radius:30px;font:13px Arial,sans-serif;cursor:pointer}button.primary{background:var(--wine);color:white}button:hover{filter:brightness(.96)}.tip{text-align:center;font:12px Arial,sans-serif;opacity:.65;margin:15px}footer{text-align:center;font-size:12px;letter-spacing:2px;padding:10px 0 25px}.confetti{position:fixed;top:-25px;width:9px;height:15px;z-index:20;pointer-events:none;animation:fall var(--duration) linear forwards}@keyframes fall{to{transform:translate(var(--drift),110vh) rotate(900deg);opacity:0}}
+@media(max-width:650px){.stage{height:460px;min-height:360px}.scene{--scale:.64}.tip{padding:0 20px}header{padding-top:24px}}
+@media(max-width:400px){.scene{--scale:.57}.stage{height:400px}}
+</style></head><body>
+<header>Lili Lolli ♡ Digital Little Wonders</header><h1>A little surprise for you...</h1><div class="subtitle">A birthday wish, wrapped in magic</div>
+<div class="stage" id="stage"><div class="scene" id="scene">
+<div class="base"><div class="greeting">Made with love ♡</div></div>
+<div class="back" id="back"><div class="inside"><h2>Happy Birthday!</h2><p>May your day bloom with little joys ♡</p><span class="decoration d1">🌸</span><span class="decoration d2">🎀</span><span class="decoration d3">🌷</span><span class="decoration d4">✨</span></div><div class="cover"><p>A LITTLE GIFT FOR YOU</p><h2>Happy<br>Birthday ♡</h2><p>OPEN WITH LOVE</p></div></div>
+<div class="popup" id="popup"><div class="arch"></div><div class="balloons">🎈🎈</div><div class="flowers">🌷🌸</div><div class="gift">🎁</div>
+<svg class="puppy" viewBox="0 0 230 235" xmlns="http://www.w3.org/2000/svg" aria-label="Original cute white puppy with burgundy bow"><g stroke="#b98791" stroke-width="3"><ellipse cx="115" cy="189" rx="71" ry="42" fill="#fffdf8"/><ellipse cx="49" cy="98" rx="37" ry="66" fill="#fff9f2" transform="rotate(19 49 98)"/><ellipse cx="180" cy="98" rx="37" ry="66" fill="#fff9f2" transform="rotate(-19 180 98)"/><ellipse cx="115" cy="107" rx="81" ry="75" fill="#fffdfa"/><ellipse cx="81" cy="113" rx="7" ry="9" fill="#4a3337" stroke="none"/><ellipse cx="149" cy="113" rx="7" ry="9" fill="#4a3337" stroke="none"/><ellipse cx="115" cy="138" rx="11" ry="8" fill="#63474b" stroke="none"/><path d="M105 151 Q115 163 125 151" fill="none" stroke="#63474b" stroke-width="3" stroke-linecap="round"/><ellipse cx="65" cy="141" rx="15" ry="9" fill="#f8c5ce" opacity=".8" stroke="none"/><ellipse cx="165" cy="141" rx="15" ry="9" fill="#f8c5ce" opacity=".8" stroke="none"/><path d="M114 173 Q81 151 77 181 Q78 207 114 188 Q150 207 153 181 Q150 151 114 173Z" fill="#913f56"/><circle cx="115" cy="182" r="9" fill="#f4cad1"/></g></svg><div class="cake">🎂</div></div>
+</div></div>
+<div class="controls"><button class="primary" id="toggle">♡ Open your surprise</button><button id="spin">↻ Rotate</button><button id="confetti">✦ Confetti</button><button id="reset">Reset view</button></div>
+<p class="tip">Drag the card to rotate · Click to open or close · Best enjoyed with a little magic</p><footer>Made just for you — Lili Lolli ♡</footer>
+<script>
+const scene=document.getElementById('scene'),toggle=document.getElementById('toggle');let open=false,yaw=-12,startX=null;
+function setOpen(v){open=v;scene.style.setProperty('--fold',v?'0deg':'-90deg');scene.style.setProperty('--popup',v?'0deg':'-90deg');toggle.textContent=v?'♡ Close the card':'♡ Open your surprise';if(v)burst()}
+function burst(){for(let i=0;i<65;i++){let el=document.createElement('i');el.className='confetti';el.style.left=Math.random()*100+'vw';el.style.background=['#c76784','#f7c2d0','#e7ad64','#fff4db','#9c526d'][i%5];el.style.setProperty('--duration',(2.5+Math.random()*2.5)+'s');el.style.setProperty('--drift',(Math.random()*300-150)+'px');document.body.appendChild(el);setTimeout(()=>el.remove(),5500)}}
+toggle.onclick=()=>setOpen(!open);document.getElementById('confetti').onclick=burst;
+document.getElementById('spin').onclick=()=>{yaw+=70;scene.style.setProperty('--yaw',yaw+'deg')};
+document.getElementById('reset').onclick=()=>{yaw=-12;scene.style.setProperty('--yaw',yaw+'deg')};
+const stage=document.getElementById('stage');stage.addEventListener('pointerdown',e=>{startX=e.clientX;stage.setPointerCapture(e.pointerId)});stage.addEventListener('pointermove',e=>{if(startX===null)return;let d=e.clientX-startX;startX=e.clientX;yaw+=d*.45;scene.style.setProperty('--yaw',yaw+'deg')});stage.addEventListener('pointerup',()=>startX=null);stage.addEventListener('pointercancel',()=>startX=null);
+</script></body></html>
