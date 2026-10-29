@@ -1,0 +1,67 @@
+{
+  "references": [
+    {
+      "role": "structure",
+      "path": "",
+      "review": ""
+    },
+    {
+      "role": "style",
+      "path": "",
+      "review": ""
+    },
+    {
+      "role": "subjects",
+      "path": "",
+      "review": ""
+    }
+  ],
+  "people": {
+    "count": null,
+    "included": "",
+    "celebrant": "",
+    "identity": "",
+    "hat": "",
+    "appearanceEdits": "",
+    "proportions": "",
+    "stickerTreatment": ""
+  },
+  "design": {
+    "structure": "",
+    "style": "",
+    "photoElements": "",
+    "forbidden": "",
+    "layers": "",
+    "density": ""
+  },
+  "copy": {
+    "language": "",
+    "title": "",
+    "eyebrow": "",
+    "intro": "",
+    "greeting": "",
+    "subtitle": "",
+    "frontMessage": "",
+    "innerMessage": "",
+    "coverNote": "",
+    "footer": ""
+  },
+  "interactions": {
+    "openClose": null,
+    "dragRotate": null,
+    "turntable": null,
+    "zoom": null,
+    "foldSlider": null,
+    "confetti": null
+  },
+  "delivery": {
+    "mode": "",
+    "outputDirectory": "",
+    "access": ""
+  },
+  "delegatedChoices": [],
+  "unresolved": [
+    "请收集三张图、明确角色并完成问答；本示例没有用户授权。"
+  ],
+  "approval": null
+}

@@ -1,0 +1,4 @@
+interface:
+  display_name: "生日立体贺卡"
+  short_description: "三图问答，先确认Q版人物贴纸，再制作装饰充盈的生日纸艺贺卡"
+  default_prompt: "使用 $birthday-pop-up-card，先收集三图和要求，生成约3头身人物贴纸，等我确认人物后再制作生日立体贺卡网页。"
